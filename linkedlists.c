@@ -10,7 +10,7 @@ struct node { int i; struct node *next; };
 
 void print_list( struct node *n ) {
 	struct node *front = n;
-	while( front != NULL ) {
+	while( front ) {
 		printf( "%d -> ", front->i );
 		front = front->next;
 	}
